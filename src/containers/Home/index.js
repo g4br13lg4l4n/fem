@@ -5,7 +5,7 @@ class Home extends Component{
 	render() {
 		return (
 			<div className="content">
-				<NavButton listas={['item1', 'item2']}/>
+				<NavButton listas={['LO ÚLTIMO', 'LO MAS VISTO']}/>
 			</div>
 	)
 	}
