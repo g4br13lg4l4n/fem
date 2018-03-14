@@ -3,8 +3,8 @@ import Items from './items'
 
 const NavButton = (props) => {
 
-  let items = props.listas.map(lista => {
-    return <Items name={lista}/>
+  let items = props.listas.map((lista, i) => {
+    return <Items name={lista} key={i}/>
   })
 
   return (
