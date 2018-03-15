@@ -9,7 +9,9 @@ class Home extends Component{
 		return (
 			<div className="content">
 				<NavButton listas={['item1', 'item2']}/>
+				<DFP/>
 				<Article/>
+				<DFP/>
 				<Article/>
 				<Article/>
 				<Article/>
