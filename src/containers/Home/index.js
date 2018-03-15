@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import DFP from '../../components/DFP/DFP'
+import HeadSection from '../../components/HeadSection/HeadSection'
 
 import NavButton from '../../components/navButton/navButton'
 import Article from '../../components/Article/Article'
@@ -15,17 +16,10 @@ const imgs = [
 		width: '87px'	
 	},
 	{
-		position: '12px 26.6%',
+		position: '40% 63.6%',
 		height: '30px',
-		width: '80px'
-	},
-	{
-		href:'http://cdn.imagendigital.com/resources/bottom/images/sello_victoria.png',
-		position: '12px 26.6%',
-		height: '24px',
-		width: '50px'
-	},
-
+		width: '100px'
+	}
 ]
 
 class Home extends Component{
@@ -50,6 +44,7 @@ class Home extends Component{
 			<div className="container">
 				<NavButton listas={['LO ÚLTIMO', 'LO MAS VISTO']}/>
 				<DFP/>
+				<HeadSection/>
 				<Article/>
 				<Article/>
 				<Article/>
