@@ -3,12 +3,18 @@ import Items from './items'
 
 const NavButton = (props) => {
 
+  const styles = {
+    nav: {
+      borderTop: '1px solid #909090'
+    }
+  }
+
   let items = props.listas.map((lista, i) => {
     return <Items name={lista} key={i}/>
   })
 
   return (
-    <nav>
+    <nav style={styles.nav}>
       <ul>
         {items}
       </ul>  
