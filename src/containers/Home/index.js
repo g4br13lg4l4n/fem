@@ -13,17 +13,10 @@ const imgs = [
 		width: '87px'	
 	},
 	{
-		position: '12px 26.6%',
+		position: '40% 63.6%',
 		height: '30px',
-		width: '80px'
-	},
-	{
-		href:'http://cdn.imagendigital.com/resources/bottom/images/sello_victoria.png',
-		position: '12px 26.6%',
-		height: '24px',
-		width: '50px'
-	},
-
+		width: '100px'
+	}
 ]
 
 class Home extends Component{
