@@ -1,9 +1,11 @@
 import React, {Component} from 'react'
-import NavButton from '../../components/navButton/navButton'
-import Article from '../../components/Article/Article'
 import DFP from '../../components/DFP/DFP'
 
+import NavButton from '../../components/navButton/navButton'
+import Article from '../../components/Article/Article'
 import Footer from '../../components/footer/footer'
+
+import Axios from '../../components/helpers/getData'
 
 const imgs = [
 	{
@@ -27,18 +29,39 @@ const imgs = [
 ]
 
 class Home extends Component{
+
+	state = {
+		data : null
+	}
+
+	componentDidMount () {
+		this.setState( prevState => {
+
+			return {
+				data : prevState.data = Axios.getData()
+			}
+
+
+		})
+	}
+
 	render() {
 		return (
 			<div className="container">
 				<NavButton listas={['LO ÚLTIMO', 'LO MAS VISTO']}/>
 				<DFP/>
 				<Article/>
+				<Article/>
+				<Article/>
 				<DFP/>
 				<Article/>
 				<Article/>
 				<Article/>
+				<DFP/>
 				<Article/>
 				<Article/>
+				<Article/>
+				<DFP/>
 				<Footer imgs={imgs}/>
 			</div>
 		)
