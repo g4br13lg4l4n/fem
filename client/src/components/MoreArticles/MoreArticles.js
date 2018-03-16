@@ -1,8 +1,23 @@
 import React from 'react'
 
 const MoreArticles = () => {
+
+  const styles = {
+    more: {
+      border: 0,
+      display: 'block',
+      margin: '16px auto',
+      background: '#DC9A55',
+      padding: '10px 18px',
+      color: 'white',
+      fontFamily: 'Helvetica',
+      fontSize: '14px',
+      borderRadius: '6px'
+    }
+  }
+
   return (
-    <button>VER MÁS NOTAS</button>
+    <button style={styles.more}>VER MÁS NOTAS</button>
   )
 }
 

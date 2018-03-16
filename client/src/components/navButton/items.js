@@ -9,8 +9,8 @@ const Items = (props) => {
     a: {
       width: '100%',
       display: 'block',
-      padding: '12px 0px',
-      fontSize: '18px',
+      padding: '10px 0px',
+      fontSize: '15px',
       fontFamily: 'sans-serif',
     }
   }
