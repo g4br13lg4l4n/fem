@@ -22,7 +22,9 @@ const HeadNav = () =>  {
       contentManu: {
         position: 'absolute',
         top: '0',
-        right: '0'
+        right: '0',
+        backgroundImage: 'url(http://cdn2.webapps.imagendigital.com/soyactitud/images/sprite.v1.png)',
+        backgroundPosition: '1px 1px'
       }
     }
   }
@@ -33,9 +35,7 @@ const HeadNav = () =>  {
         <div style={styles.header.img} ></div>
         <div style={styles.header.contentManu}>
           <div>
-            <button style={styles.header.btnMenu}> 
-              <span></span>
-            </button>
+            <button style={styles.header.btnMenu}></button>
           </div>  
         </div>
       </div>  

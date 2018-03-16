@@ -31,7 +31,6 @@ const HeadSection = () => {
     }
   }
 
-
   return (
     <div style={styles.content}>
       <span style={styles.spanBefore}></span>
