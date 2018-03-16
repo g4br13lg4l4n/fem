@@ -1,19 +1,29 @@
 {
-  "name": "test",
-  "version": "0.1.0",
-  "private": true,
+  "name": "fem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zeroxys/fem.git"
+  },
+  "author": " <miguel.zavala@imagedigital.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zeroxys/fem/issues"
+  },
+  "homepage": "https://github.com/Zeroxys/fem#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "fetch": "^1.1.0",
-    "react": "^16.2.0",
-    "react-dfp": "^0.7.0",
-    "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "concurrently": "^3.5.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.2"
   }
 }
