@@ -3,6 +3,7 @@ import NavButton from '../../components/navButton/navButton'
 import Article from '../../components/Article/Article'
 import DFP from '../../components/DFP/DFP'
 import HeadSection from '../../components/HeadSection/HeadSection'
+import HeadNav from '../../components/HeadNav/HeadNav'
 
 import Footer from '../../components/footer/footer'
 
@@ -24,6 +25,7 @@ class Home extends Component{
 	render() {
 		return (
 			<div className="container">
+				<HeadNav/>
 				<NavButton listas={['LO ÚLTIMO', 'LO MAS VISTO']}/>
 				<DFP/>
 				<HeadSection/>

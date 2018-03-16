@@ -6,6 +6,9 @@ const NavButton = (props) => {
   const styles = {
     nav: {
       borderTop: '1px solid #909090'
+    },
+    ul: {
+      display: 'flex'
     }
   }
 
@@ -15,7 +18,7 @@ const NavButton = (props) => {
 
   return (
     <nav style={styles.nav}>
-      <ul>
+      <ul style={styles.ul}>
         {items}
       </ul>  
     </nav>  	

@@ -35,7 +35,7 @@ const HeadSection = () => {
   return (
     <div style={styles.content}>
       <span style={styles.spanBefore}></span>
-      <h1 style={styles.title}>Lo más visto</h1>
+      <h2 style={styles.title}>Lo más visto</h2>
       <span style={styles.spanAfter}></span>
     </div>
   )
