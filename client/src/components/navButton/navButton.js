@@ -13,12 +13,12 @@ const NavButton = (props) => {
   }
 
   let items = props.listas.map((lista, i) => {
-    return <Items name={lista} key={i}/>
+    return <Items name={lista} key={i} click={props.click} isActive ={props.isActive}/>
   })
 
   return (
     <nav style={styles.nav}>
-      <ul style={styles.ul}>
+      <ul className='listMenu' style={styles.ul}>
         {items}
       </ul>  
     </nav>  	

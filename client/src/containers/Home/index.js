@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import DFP from '../../components/DFP/DFP'
 import HeadSection from '../../components/HeadSection/HeadSection'
 import HeadNav from '../../components/HeadNav/HeadNav'
+import MoreArticles from '../../components/MoreArticles/MoreArticles'
 
 import NavButton from '../../components/navButton/navButton'
 import Article from '../../components/Article/Article'
@@ -26,6 +27,7 @@ const imgs = [
 class Home extends Component{
 
 	state = {
+		isActive: false,
 		data : []
 	}
 
@@ -40,9 +42,16 @@ class Home extends Component{
 			})
 	}
 
-	render() {
+	onClick = () => {
+		this.setState( (prevState) => {
+			return {
+				isActive : !prevState.isActive 
+			}
+		})
+		console.log(this.state.isActive)
+	}
 
-		console.log(this.state.data)
+	render() {
 
 		let Articles = this.state.data.map( (articulo, i) => {
 			return <Article 
@@ -55,11 +64,12 @@ class Home extends Component{
 		return (
 			<div className="container">
 				<HeadNav/>
-				<NavButton listas={['LO ÚLTIMO', 'LO MAS VISTO']}/>
+				<NavButton click={this.onClick} isActive={this.state.isActive}  listas={['LO ÚLTIMO', 'LO MAS VISTO']}/>
 				<DFP/>
 				<HeadSection/>
 				{Articles}
 				<DFP/>
+				<MoreArticles/>
 				<Footer imgs={imgs}/>
 			</div>
 		)

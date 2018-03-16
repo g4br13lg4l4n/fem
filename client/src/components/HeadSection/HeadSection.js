@@ -9,7 +9,8 @@ const HeadSection = () => {
       position: 'relative'
     },
     title: {
-      fontSize: '35px',
+      fontSize: '40px',
+      padding: '6px 0'
     },
     spanBefore: {
       backgroundImage: 'url("http://cdn2.webapps.imagendigital.com/soyactitud/images/sprite.v1.png")',
@@ -18,7 +19,7 @@ const HeadSection = () => {
       height: '20px',
       position: 'absolute',
       left: '0',
-      top: '12px'
+      top: '22px'
     },
     spanAfter: {
       backgroundImage: 'url("http://cdn2.webapps.imagendigital.com/soyactitud/images/sprite.v1.png")',
@@ -27,7 +28,7 @@ const HeadSection = () => {
       height: '20px',
       position: 'absolute',
       right: '0',
-      top: '12px'
+      top: '22px'
     }
   }
 

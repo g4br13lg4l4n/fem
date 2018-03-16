@@ -22,6 +22,16 @@
   font-size: large;
 }
 
+.listMenu li:first-child {
+  background-color: #c3c3c3 !important;
+  color: white !important;
+}
+
+.listMenu li:nth-child(2) {
+  background-color: white !important;
+  color: black !important;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

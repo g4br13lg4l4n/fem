@@ -17,14 +17,16 @@ const HeadNav = () =>  {
       },
       btnMenu: {
         width: '38px',
-        height: '31px'
+        height: '31px',
+        border: '0',
+        background: 'transparent'
       },
       contentManu: {
         position: 'absolute',
         top: '0',
         right: '0',
         backgroundImage: 'url(http://cdn2.webapps.imagendigital.com/soyactitud/images/sprite.v1.png)',
-        backgroundPosition: '1px 1px'
+        backgroundPosition: '1% 4.4%'
       }
     }
   }
