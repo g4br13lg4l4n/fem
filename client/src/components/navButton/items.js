@@ -11,7 +11,8 @@ const Items = (props) => {
       display: 'block',
       padding: '10px 0px',
       fontSize: '15px',
-      fontFamily: 'sans-serif',
+      fontFamily: ['Oswald', 'sans-serif'],
+      fontWeight: '300'
     }
   }
 

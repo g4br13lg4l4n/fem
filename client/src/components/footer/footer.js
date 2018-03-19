@@ -10,11 +10,12 @@ const styles = {
     display: 'flex'
   },
   nav: {
-    height: '36px'
+    height: '46px'
   },
   li: {
     width: '100px',
-    height: '30px'
+    height: '30px',
+    margin: '4px'
   },
   a: {
     height: '100%'
@@ -29,7 +30,7 @@ const imgSrc = 'http://cdn.imagendigital.com/resources/bottom/images/sello_victo
 
 const Footer = (props) => {
   let imgs = props.imgs.map(( img, i) =>{
-    return <ListImgFooter img={img.href} position={img.position} height={img.height} width={img.width} key={i}/>
+    return <ListImgFooter href={img.href} position={img.position} height={img.height} width={img.width} key={i}/>
   })
 
   return (

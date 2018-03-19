@@ -15,12 +15,12 @@ const imgs = [
 		href: 'http://www.imagen.com.mx/',
 		position: '2px 63.6%',
 		height: '32px',
-		width: '87px'	
+		width: '87px',
 	},
 	{
 		position: '40% 63.6%',
 		height: '30px',
-		width: '100px'
+		width: '100px',
 	}
 ]
 

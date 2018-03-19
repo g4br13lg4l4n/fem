@@ -4,7 +4,8 @@ import sprites from '../../assets/images/sprite.v1.png'
 const ListImgFooter = (props) => {
   const styles = {
     li: {
-      padding: '2px'
+      padding: '2px',
+      margin: '4px'
     },
     span: {
       backgroundImage: `url(${sprites})`,

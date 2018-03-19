@@ -12,7 +12,8 @@ const MoreArticles = () => {
       color: 'white',
       fontFamily: ['Oswald', 'sans-serif'],
       fontSize: '18px',
-      borderRadius: '6px'
+      borderRadius: '6px',
+      fontWeight: '400'
     }
   }
 
