@@ -48,7 +48,6 @@ class Home extends Component{
 				isActive : !prevState.isActive 
 			}
 		})
-		console.log(this.state.isActive)
 	}
 
 	render() {
@@ -65,10 +64,20 @@ class Home extends Component{
 			<div className="container">
 				<HeadNav/>
 				<NavButton click={this.onClick} isActive={this.state.isActive}  listas={['LO ÚLTIMO', 'LO MAS VISTO']}/>
-				<DFP/>
+				<div style={{display:'flex', justifyContent : 'center', alignItems:'center'}}>	
+					<DFP/>
+				</div>	
 				<HeadSection/>
 				{Articles}
-				<DFP/>
+				<div style={{display:'flex', justifyContent : 'center', alignItems:'center'}}>
+					<DFP/>
+				</div>
+				<div style={{display:'flex', justifyContent : 'center', alignItems:'center'}}>
+					<DFP/>
+				</div>
+				<div style={{display:'flex', justifyContent : 'center', alignItems:'center'}}>
+					<DFP/>
+				</div>
 				<MoreArticles/>
 				<Footer imgs={imgs}/>
 			</div>

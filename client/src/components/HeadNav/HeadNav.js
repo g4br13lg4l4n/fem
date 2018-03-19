@@ -7,7 +7,7 @@ const HeadNav = () =>  {
       width: '100%',
       content: {
         textAlign: 'center',
-        position: 'relative'
+        position: 'relative',
       },
       img: {
         backgroundImage: 'url(http://cdn2.webapps.imagendigital.com/soyactitud/images/sprite.v1.png)',
@@ -19,14 +19,16 @@ const HeadNav = () =>  {
         width: '38px',
         height: '31px',
         border: '0',
-        background: 'transparent'
+        background: 'transparent',
+        margin: '3px 12px 0 0'
       },
       contentManu: {
         position: 'absolute',
         top: '0',
         right: '0',
         backgroundImage: 'url(http://cdn2.webapps.imagendigital.com/soyactitud/images/sprite.v1.png)',
-        backgroundPosition: '1% 4.4%'
+        backgroundPosition: '1% 4.4%',
+        transform: 'scale(.9)'
       }
     }
   }

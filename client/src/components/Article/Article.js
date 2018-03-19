@@ -7,7 +7,8 @@ const styles = {
     header:{
       padding: '10px 3% 10px 3%',
       boxSizing: 'border-box',
-      fontSize: '25px'
+      fontSize: '25px',
+      fontFamily: ['Playfair Display', 'serif']
     },
     body:{
       fontFamily: 'Helvitica',

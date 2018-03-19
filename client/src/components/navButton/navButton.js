@@ -5,7 +5,8 @@ const NavButton = (props) => {
 
   const styles = {
     nav: {
-      borderTop: '1px solid #909090'
+      borderTop: '1px solid #909090',
+      marginBottom: '20px'
     },
     ul: {
       display: 'flex'
