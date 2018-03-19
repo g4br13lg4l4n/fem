@@ -4,7 +4,7 @@ import ListImgFooter from '../listImgFooter/listImgFooter'
 const styles = {
   footer: {
     display: 'block',
-    background: 'black'
+    background: '#222222'
   },
   ul: {
     display: 'flex'
@@ -12,6 +12,17 @@ const styles = {
   nav: {
     height: '36px'
   },
+  li: {
+    width: '100px',
+    height: '30px'
+  },
+  a: {
+    height: '100%'
+  },
+  img: {
+    width: 'inherit',
+    height: 'inherit'
+  }
 }
 
 const Footer = (props) => {
@@ -24,6 +35,11 @@ const Footer = (props) => {
       <nav style={styles.nav}>
         <ul style={styles.ul}>
           {imgs}
+          <li style={styles.li}>
+            <a style={styles.a} href='https://www.victoria147.com/'>
+              <img style={styles.img} src='http://cdn.imagendigital.com/resources/bottom/images/sello_victoria.png'/>
+            </a>
+          </li>  
         </ul>  
       </nav>    
     </footer>  

@@ -10,8 +10,8 @@ const MoreArticles = () => {
       background: '#DC9A55',
       padding: '10px 18px',
       color: 'white',
-      fontFamily: 'Helvetica',
-      fontSize: '14px',
+      fontFamily: ['Oswald', 'sans-serif'],
+      fontSize: '18px',
       borderRadius: '6px'
     }
   }

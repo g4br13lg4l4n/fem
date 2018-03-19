@@ -11,7 +11,7 @@ const styles = {
       fontFamily: ['Playfair Display', 'serif']
     },
     body:{
-      fontFamily: 'Helvitica',
+      fontFamily: 'Arial',
       color: '#666',
       margin: 'margin',
       padding: '10px 3% 10px 3%',
@@ -19,6 +19,7 @@ const styles = {
     seeMore:{
       border: '1px solid black',
       padding: '6px 14px',
+      marginTop: '18px',
       background: 'transparent',
       borderRadius: '5px',
       fontFamily: 'Helvetica',
@@ -29,8 +30,8 @@ const styles = {
       position: 'relative',
       zIndex: '1',
       textAlign: 'center',
-      marginTop: '-90px',
-      height: '80px',
+      marginTop: '-110px',
+      height: '95px',
       paddingTop: '40px',
       backgroundRepeat: 'repeat-x'
     },
