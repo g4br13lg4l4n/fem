@@ -25,6 +25,8 @@ const styles = {
   }
 }
 
+const imgSrc = 'http://cdn.imagendigital.com/resources/bottom/images/sello_victoria.png'
+
 const Footer = (props) => {
   let imgs = props.imgs.map(( img, i) =>{
     return <ListImgFooter img={img.href} position={img.position} height={img.height} width={img.width} key={i}/>
@@ -37,7 +39,7 @@ const Footer = (props) => {
           {imgs}
           <li style={styles.li}>
             <a style={styles.a} href='https://www.victoria147.com/'>
-              <img style={styles.img} src='http://cdn.imagendigital.com/resources/bottom/images/sello_victoria.png'/>
+              <img style={styles.img} src={imgSrc}/>
             </a>
           </li>  
         </ul>  
