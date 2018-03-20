@@ -33,7 +33,7 @@ class Home extends Component{
 
 	componentDidMount () {
 
-		axios.get('http://localhost:5000/api')
+		axios.get('http://172.17.18.123:5000/api')
 			.then( response => {
 				this.setState( prevState => {
 					return {
