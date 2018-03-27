@@ -98,6 +98,7 @@ a {
 	background-color: #c29912;
 	padding: 12px 0px 8px 10px;
 	line-height: 18px;
+	box-sizing: border-box;
 }
 .dropdown-submenu{
 	margin-left: 35px;
