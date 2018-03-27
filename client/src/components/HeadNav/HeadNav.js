@@ -1,6 +1,7 @@
 import React from 'react'
+import Menu from './menu/menu'
 
-const HeadNav = () =>  {
+const HeadNav = (props) =>  {
 
   const styles = {
     header: {
@@ -29,19 +30,40 @@ const HeadNav = () =>  {
         backgroundImage: 'url(http://cdn2.webapps.imagendigital.com/soyactitud/images/sprite.v1.png)',
         backgroundPosition: '1% 4.4%',
         transform: 'scale(.9)'
+      },
+      btnSearch: {
+        backgroundImage: 'url(http://cdn2.webapps.imagendigital.com/soyactitud/images/sprite.v1.png)',
+        backgroundPosition: '-1px -559px',
+        height: '30px',
+        width: '32px',
+        border: '0',
+        transform: 'scale(.9)',
+      },
+      input: {
+        width: '90%',
+        height: '30px',
+        color: 'white'
+      },
+      formMenu: {
+        padding: '6px 0',
+        display: 'flex'
       }
     }
   }
-
   return (
     <header style={styles.header}>
       <div style={styles.header.content}>
         <div style={styles.header.img} ></div>
         <div style={styles.header.contentManu}>
-          <div>
-            <button style={styles.header.btnMenu}></button>
-          </div>  
+          <button onClick={props.menuEnable} style={styles.header.btnMenu}></button> 
         </div>
+      </div>  
+      <div className="menu">
+        <form style={styles.header.formMenu}>
+          <input style={styles.header.input} type="search" placeholder="Buscar"/>
+          <input style={styles.header.btnSearch} type="submit" value=""/>
+        </form> 
+        <Menu/>
       </div>  
     </header>  
   )

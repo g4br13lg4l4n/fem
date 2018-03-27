@@ -28,7 +28,17 @@ class Home extends Component{
 
 	state = {
 		isActive: false,
-		data : []
+		data : [],
+		toogleMenu: false,
+	}
+
+	menuEnable = () => {
+		this.setState( prevState => {
+			return {
+				toogleMenu : !prevState.toogleMenu
+			}
+		})
+		console.log(this.state.toogleMenu)
 	}
 
 	componentDidMount () {
@@ -37,7 +47,8 @@ class Home extends Component{
 			.then( response => {
 				this.setState( prevState => {
 					return {
-						data : prevState.data = [...response.data.data]					}
+						data : prevState.data = [...response.data.data]	
+					}
 				})
 			})
 	}
@@ -62,7 +73,7 @@ class Home extends Component{
 
 		return (
 			<div className="container">
-				<HeadNav/>
+				<HeadNav menuEnable={this.menuEnable}/>
 				<NavButton click={this.onClick} isActive={this.state.isActive}  listas={['LO ÚLTIMO', 'LO MAS VISTO']}/>
 				<div style={{display:'flex', justifyContent : 'center', alignItems:'center'}}>	
 					<DFP/>

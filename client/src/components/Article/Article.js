@@ -44,8 +44,10 @@ const styles = {
   return (
     <article>
       <img alt={'adsad'} src={props.img}/>
-      <h3 style={styles.article.header}>{props.title}</h3>
-      <p style={styles.article.body}>{props.summary}</p>
+      <div className="article-content">
+        <h3 style={styles.article.header}>{props.title}</h3>
+        <p style={styles.article.body}>{props.summary}</p>
+      </div>  
       <div style={styles.article.blur}>
         <button style={styles.article.seeMore}>VER MÁS</button>
       </div>  
